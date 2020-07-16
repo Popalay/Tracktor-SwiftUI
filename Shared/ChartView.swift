@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChartView: View {
     let data: [Double]
+    @State private var amplifier: CGFloat = 0
     
     let strokeColor = LinearGradient(gradient: Gradient(colors:Resources.Colors.gradient1), startPoint: .leading, endPoint: .trailing)
     
@@ -18,8 +19,12 @@ struct ChartView: View {
             let (conPoints1, conPoints2) = createConnectionPoints(points: points)
             let borderPath = createBorderPath(points: points, conPoints1: conPoints1, conPoints2: conPoints2)
             
-            borderPath.stroke(strokeColor, lineWidth: 2)
-            
+            borderPath.trim(from:0.0, to: amplifier)
+                .stroke(strokeColor, lineWidth: 2)
+                .animation(Animation.easeInOut(duration: 0.5))
+                .onAppear {
+                    self.amplifier = 1
+                }
         }
     }
 }
@@ -31,8 +36,6 @@ func createPoints(data: [Double], size: CGSize) -> [CGPoint] {
     let minData = data.min() ?? 0.0
     let optimizedData = data.map { $0 - minData }
     let maxData = optimizedData.max() ?? 0.0
-    
-    //let yMax = bottomY - (maxData / maxData * bottomY)
     
     return optimizedData.enumerated().map { (index, value) -> CGPoint in
         let y = bottomY - (value / maxData * bottomY)

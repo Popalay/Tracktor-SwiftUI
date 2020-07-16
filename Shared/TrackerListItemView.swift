@@ -18,7 +18,7 @@ struct TrackerListItemView: View {
                 .foregroundColor(Resources.Colors.onSurface)
             Spacer()
             ChartView(data: data.records.map{ $0.value })
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }.padding(.all, 16)
         .background(Resources.Colors.surface)
         .cornerRadius(8)
