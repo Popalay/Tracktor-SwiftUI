@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		44D1CF7824C0129E00AC238D /* TracktorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF6524C0129D00AC238D /* TracktorApp.swift */; };
 		44D1CF7924C0129E00AC238D /* TracktorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF6524C0129D00AC238D /* TracktorApp.swift */; };
-		44D1CF7A24C0129E00AC238D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF6624C0129D00AC238D /* ContentView.swift */; };
-		44D1CF7B24C0129E00AC238D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF6624C0129D00AC238D /* ContentView.swift */; };
+		44D1CF7A24C0129E00AC238D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF6624C0129D00AC238D /* ListView.swift */; };
+		44D1CF7B24C0129E00AC238D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF6624C0129D00AC238D /* ListView.swift */; };
 		44D1CF7C24C0129E00AC238D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D1CF6724C0129E00AC238D /* Assets.xcassets */; };
 		44D1CF7D24C0129E00AC238D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D1CF6724C0129E00AC238D /* Assets.xcassets */; };
+		44D1CF8724C0149800AC238D /* TrackerListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF8624C0149800AC238D /* TrackerListItemView.swift */; };
+		44D1CF8824C0149800AC238D /* TrackerListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF8624C0149800AC238D /* TrackerListItemView.swift */; };
+		44D1CF8A24C01B7A00AC238D /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF8924C01B7A00AC238D /* Tracker.swift */; };
+		44D1CF8B24C01B7A00AC238D /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF8924C01B7A00AC238D /* Tracker.swift */; };
+		44D1CF8D24C0308600AC238D /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF8C24C0308600AC238D /* Resources.swift */; };
+		44D1CF8E24C0308600AC238D /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF8C24C0308600AC238D /* Resources.swift */; };
+		44D1CF9024C04AE400AC238D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF8F24C04AE400AC238D /* ChartView.swift */; };
+		44D1CF9124C04AE400AC238D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D1CF8F24C04AE400AC238D /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44D1CF6524C0129D00AC238D /* TracktorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracktorApp.swift; sourceTree = "<group>"; };
-		44D1CF6624C0129D00AC238D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44D1CF6624C0129D00AC238D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		44D1CF6724C0129E00AC238D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44D1CF6C24C0129E00AC238D /* Tracktor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracktor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D1CF6F24C0129E00AC238D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D1CF7424C0129E00AC238D /* Tracktor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracktor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D1CF7624C0129E00AC238D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D1CF7724C0129E00AC238D /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		44D1CF8624C0149800AC238D /* TrackerListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerListItemView.swift; sourceTree = "<group>"; };
+		44D1CF8924C01B7A00AC238D /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		44D1CF8C24C0308600AC238D /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		44D1CF8F24C04AE400AC238D /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				44D1CF6524C0129D00AC238D /* TracktorApp.swift */,
-				44D1CF6624C0129D00AC238D /* ContentView.swift */,
+				44D1CF6624C0129D00AC238D /* ListView.swift */,
 				44D1CF6724C0129E00AC238D /* Assets.xcassets */,
+				44D1CF8624C0149800AC238D /* TrackerListItemView.swift */,
+				44D1CF8924C01B7A00AC238D /* Tracker.swift */,
+				44D1CF8C24C0308600AC238D /* Resources.swift */,
+				44D1CF8F24C04AE400AC238D /* ChartView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,8 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D1CF7A24C0129E00AC238D /* ContentView.swift in Sources */,
+				44D1CF8724C0149800AC238D /* TrackerListItemView.swift in Sources */,
+				44D1CF8A24C01B7A00AC238D /* Tracker.swift in Sources */,
+				44D1CF8D24C0308600AC238D /* Resources.swift in Sources */,
+				44D1CF7A24C0129E00AC238D /* ListView.swift in Sources */,
 				44D1CF7824C0129E00AC238D /* TracktorApp.swift in Sources */,
+				44D1CF9024C04AE400AC238D /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D1CF7B24C0129E00AC238D /* ContentView.swift in Sources */,
+				44D1CF8824C0149800AC238D /* TrackerListItemView.swift in Sources */,
+				44D1CF8B24C01B7A00AC238D /* Tracker.swift in Sources */,
+				44D1CF8E24C0308600AC238D /* Resources.swift in Sources */,
+				44D1CF7B24C0129E00AC238D /* ListView.swift in Sources */,
 				44D1CF7924C0129E00AC238D /* TracktorApp.swift in Sources */,
+				44D1CF9124C04AE400AC238D /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
